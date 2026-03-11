@@ -725,7 +725,7 @@ namespace Cryptic.Menu
 
         public static ButtonInfo GetIndex(string buttonText)
         {
-            foreach (ButtonInfo[] buttons in Menu.Buttons.buttons)
+            foreach (ButtonInfo[] buttons in Buttons.buttons)
             {
                 foreach (ButtonInfo button in buttons)
                 {
@@ -740,9 +740,9 @@ namespace Cryptic.Menu
         }
 
         // Variables
-            // Important
-                // Objects
-                    public static GameObject menu, menuBackground, reference, canvasObject, menuOutline, menuOutline2 , menuOutline3;
+        // Important
+        // Objects
+        public static GameObject menu, menuBackground, reference, canvasObject, menuOutline, menuOutline2 , menuOutline3;
 
                     public static SphereCollider buttonCollider;
                     public static Camera TPC;

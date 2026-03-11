@@ -87,12 +87,6 @@ namespace Cryptic.Menu
         private static GameObject GunPointer;
         private static LineRenderer GunLine;
 
-        if (GunLine && !ControllerInputPoller.Instance.RightHand.TriggerFloat(XRNode.RightHand) > 0.5f)
-        {
-            GunLine.SetActive(false);
-            gunLocked.SetActive(false);
-        }
-
         public static void prefix()
         {
             try

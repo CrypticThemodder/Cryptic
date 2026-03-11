@@ -5,6 +5,7 @@ using UnityEngine;
 using static Cryptic.Settings;
 using static Cryptic.Classes.ButtonInfo;
 using Cryptic.Classes;
+using Cryptic_Free.Mods.Settings;
 
 namespace Cryptic.Menu
 {
@@ -18,10 +19,10 @@ namespace Cryptic.Menu
                 new ButtonInfo { buttonText = "Movement Mods", method =() => Main.Cats(3), isTogglable = false, toolTip = "Opens the room mods page for the menu."},
                 new ButtonInfo { buttonText = "Safety Mods", method =() => Main.Cats(4), isTogglable = false, toolTip = "Opens the safety mods page for the menu."},
                 new ButtonInfo { buttonText = "Visual Mods", method =() => Main.Cats(5), isTogglable = false, toolTip = "Opens the visual mods page for the menu."},
-                new ButtonInfo { buttonText = "Advantage", method =() => Main.Cats(6), isTogglable = false, toolTip = "Opens the advantage mods page for the menu."},
+                new ButtonInfo { buttonText = "Advantage Mods", method =() => Main.Cats(6), isTogglable = false, toolTip = "Opens the advantage mods page for the menu."},
                 new ButtonInfo { buttonText = "OP Mods", method =() => Main.Cats(7), isTogglable = false, toolTip = "Opens the op mods page for the menu."},
-                new ButtonInfo { buttonText = "Fun Mods", method =() => Main.Cats(8), isTogglable = false, toolTip = "Opens the fun mods page for the menu."},
-                new ButtonInfo { buttonText = "Exploit Mods", method =() => Main.Cats(9), isTogglable = false, toolTip = "Opens the exploit mods page for the menu."},
+                new ButtonInfo { buttonText = "Exploit Mods", method =() => Main.Cats(8), isTogglable = false, toolTip = "Opens the fun mods page for the menu."},
+                //new ButtonInfo { buttonText = "", method =() => Main.Cats(9), isTogglable = false, toolTip = "Opens the exploit mods page for the menu."},
             },
 
             new ButtonInfo[] { // [1] Settings
@@ -38,6 +39,7 @@ namespace Cryptic.Menu
 
             new ButtonInfo[] { // Movement Mods [3]
 
+                new ButtonInfo { buttonText = "Movement Settings", method =() => Main.Cats(9), isTogglable = false, toolTip = "Opens the Movement Settings page for the menu."},
                 new ButtonInfo { buttonText = "Platforms", method =() => Movement.Platforms(), toolTip = "Spawns platforms on your hands when pressing grip."},
                 new ButtonInfo { buttonText = "Fly", method =() => Movement.Fly(), toolTip = "Sends you forward when holding A."},
                 new ButtonInfo { buttonText = "Teleport Gun", method =() => Movement.TeleportGun(), toolTip = "Teleports you to wherever your pointer is when pressing trigger."},
@@ -86,12 +88,7 @@ namespace Cryptic.Menu
                 new ButtonInfo { buttonText = "Tag All", method =() => Overpowered.TagAll(), toolTip = "Tags everyone."},
             },
 
-            new ButtonInfo[] { // Fun Mods [8]
-
-                new ButtonInfo { buttonText = "TPose [Broken]", isTogglable = false, method =() => Fun.TPose(), toolTip = "TBone Steak but... It's A Gorilla?"},
-            },
-
-            new ButtonInfo[] { // Exploit Mods [9]
+            new ButtonInfo[] { // Exploit Mods [8]
 
                 new ButtonInfo { buttonText = "Freeze All", method =() => Exploits.FreezeAll(), toolTip = "TBone Steak but... It's A Gorilla?"},
                 new ButtonInfo { buttonText = "Kick Server", method =() => Exploits.KickServer(), toolTip = "Kicks All The Other Players."},
@@ -102,6 +99,11 @@ namespace Cryptic.Menu
                 new ButtonInfo { buttonText = "Kick All", method =() => Exploits.KickAll(), toolTip = "Kick Everyone."},
                 new ButtonInfo { buttonText = "Enable GreyScreen All", method =() => Exploits.GreyScreenAll(), toolTip = "ENABLE: GreyScreen Everyone."},
                 new ButtonInfo { buttonText = "Disable GreyScreen All", method =() => Exploits.GreyScreenAllDisable(), toolTip = "DISABLE: GreyScreen Everyone."},
+            },
+
+            new ButtonInfo[] { // Movement Settings[9]
+
+                new ButtonInfo { buttonText = "Change Fly Speed", overlapText = "Change Fly Speed [Normal]", method =() => MovementSettings.ChangeFlySpeed(), toolTip = "Change how fast you go while flying"},
             },
         };
     }

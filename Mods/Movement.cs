@@ -10,6 +10,8 @@ using UnityEngine.XR;
 using static Cryptic.Menu.Main;
 using Cryptic.Menu;
 using static Cryptic.Settings;
+using Cryptic.Mods;
+using Cryptic_Free.Mods.Settings;
 
 namespace Cryptic.Mods
 {
@@ -19,7 +21,7 @@ namespace Cryptic.Mods
         {
             if (ControllerInputPoller.instance.rightControllerPrimaryButton)
             {
-                GTPlayer.Instance.transform.position += GorillaTagger.Instance.headCollider.transform.forward * Time.deltaTime * 9f;
+                GTPlayer.Instance.transform.position += GorillaTagger.Instance.headCollider.transform.forward * Time.deltaTime * MovementSettings.flySpeed;
                 GorillaTagger.Instance.rigidbody.linearVelocity = Vector3.zero;
             }
         }

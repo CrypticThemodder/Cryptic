@@ -12,12 +12,12 @@ namespace Cryptic.Mods
             buttonsType = 1;
         }
 
-        public static void MenuSettings()
+        public static void RoomMods()
         {
             buttonsType = 2;
         }
 
-        public static void MovementSettings()
+        public static void MovementMods()
         {
             buttonsType = 3;
         }
@@ -45,6 +45,11 @@ namespace Cryptic.Mods
         public static void ExploitMods()
         {
             buttonsType = 8;
+        }
+
+        public static void Movementsettings()
+        {
+            buttonsType = 9;
         }
 
         public static void RightHand()

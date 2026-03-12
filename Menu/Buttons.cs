@@ -1,4 +1,4 @@
-﻿using Cryptic.Mods;
+using Cryptic.Mods;
 using Oculus.Interaction;
 using Cryptic.Mods;
 using UnityEngine;
@@ -21,8 +21,6 @@ namespace Cryptic.Menu
                 new ButtonInfo { buttonText = "Visual Mods", method =() => Main.Cats(5), isTogglable = false, toolTip = "Opens the visual mods page for the menu."},
                 new ButtonInfo { buttonText = "Advantage Mods", method =() => Main.Cats(6), isTogglable = false, toolTip = "Opens the advantage mods page for the menu."},
                 new ButtonInfo { buttonText = "OP Mods", method =() => Main.Cats(7), isTogglable = false, toolTip = "Opens the op mods page for the menu."},
-                new ButtonInfo { buttonText = "Exploit Mods", method =() => Main.Cats(8), isTogglable = false, toolTip = "Opens the fun mods page for the menu."},
-                //new ButtonInfo { buttonText = "", method =() => Main.Cats(9), isTogglable = false, toolTip = "Opens the exploit mods page for the menu."},
             },
 
             new ButtonInfo[] { // [1] Settings
@@ -88,21 +86,8 @@ namespace Cryptic.Menu
                 new ButtonInfo { buttonText = "Tag All", method =() => Overpowered.TagAll(), toolTip = "Tags everyone."},
             },
 
-            new ButtonInfo[] { // Exploit Mods [8]
-
-                new ButtonInfo { buttonText = "Freeze All", method =() => Exploits.FreezeAll(), toolTip = "TBone Steak but... It's A Gorilla?"},
-                new ButtonInfo { buttonText = "Kick Server", method =() => Exploits.KickServer(), toolTip = "Kicks All The Other Players."},
-                new ButtonInfo { buttonText = "Lag On Touch", method =() => Exploits.LagOnTouch(), toolTip = "Lags Players That Touch You."},
-                new ButtonInfo { buttonText = "Kick On Touch", method =() => Exploits.KickOnTouch(), toolTip = "Kicks Players Who Touch You."},
-                new ButtonInfo { buttonText = "Lag All", method =() => Exploits.LagAll(), toolTip = "Lags everyone."},
-                new ButtonInfo { buttonText = "Kick Gun", method =() => Exploits.KickGun(), toolTip = "Kick Whoever You Desire."},
-                new ButtonInfo { buttonText = "Kick All", method =() => Exploits.KickAll(), toolTip = "Kick Everyone."},
-                new ButtonInfo { buttonText = "Enable GreyScreen All", method =() => Exploits.GreyScreenAll(), toolTip = "ENABLE: GreyScreen Everyone."},
-                new ButtonInfo { buttonText = "Disable GreyScreen All", method =() => Exploits.GreyScreenAllDisable(), toolTip = "DISABLE: GreyScreen Everyone."},
-            },
-
-            new ButtonInfo[] { // Movement Settings[9]
-
+            new ButtonInfo[] { // Movement Settings [8]
+                       
                 new ButtonInfo { buttonText = "Change Fly Speed", overlapText = "Change Fly Speed [Normal]", method =() => MovementSettings.ChangeFlySpeed(), toolTip = "Change how fast you go while flying"},
             },
         };
